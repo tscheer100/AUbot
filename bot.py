@@ -88,4 +88,4 @@ async def help(ctx):
     "to get the `Server Voter` tag, vote here:\n"
     "https://top.gg/servers/734164220911812618/vote")
 
-client.run("Nope")
+client.run("API key goes here")
