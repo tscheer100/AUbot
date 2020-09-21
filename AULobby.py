@@ -1,5 +1,10 @@
 import discord
+import os
 from discord.ext import commands
+from dotenv import load_dotenv
+
+load_dotenv( './.env')
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 
 lobby420 = ["000000", "NA"]
 
@@ -88,4 +93,4 @@ async def help(ctx):
     "to get the `Server Voter` tag, vote here:\n"
     "https://top.gg/servers/734164220911812618/vote")
 
-client.run("API Key")
+client.run(DISCORD_TOKEN)
