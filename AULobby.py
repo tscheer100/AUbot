@@ -95,6 +95,8 @@ async def help(ctx):
     "```New Aliases added\n"
     "Make = m\n"
     "Get = g\n"
-    "Help = h```")
+    "Help = h```\n"
+    "\n"
+    "E.g. !lobby m 1 ABCDEF NA")
 
 client.run(DISCORD_TOKEN)
