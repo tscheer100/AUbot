@@ -92,9 +92,9 @@ async def help(ctx):
     "***NOTE:   only people with the `Server Voter` role can use this command.*** \n"
     "to get the `Server Voter` tag, vote here:\n"
     "https://top.gg/servers/734164220911812618/vote\n\n\n\n"
-    "New Aliases added\n"
+    "```New Aliases added\n"
     "Make = m\n"
     "Get = g\n"
-    "Help = h")
+    "Help = h```")
 
 client.run(DISCORD_TOKEN)
