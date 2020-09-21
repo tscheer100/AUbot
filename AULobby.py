@@ -23,7 +23,7 @@ async def on_ready():
     print("AU Lobby is now running")
 
 
-@client.command()
+@client.command(aliases=["g", "G"])
 async def get(ctx, num=123):
     
     result = ""
