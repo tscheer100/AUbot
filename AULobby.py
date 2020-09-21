@@ -91,7 +91,7 @@ async def help(ctx):
     "If you want to set a code for a lobby, type `!lobby make <lobby #> <code> <NA|EU|Asia>`.\n"
     "to get the `Server Voter` tag, vote here:\n"
     "https://top.gg/servers/734164220911812618/vote\n\n"
-    "***NOTE:   only people with the `Server Voter` role can use this command.*** \n"
+    "***NOTE:   only people with the `Server Voter` role can use the `!lobby make` command.*** \n"
     "```New Aliases added\n"
     "Make = m\n"
     "Get = g\n"
