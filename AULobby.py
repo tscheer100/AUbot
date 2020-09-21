@@ -97,6 +97,6 @@ async def help(ctx):
     "Get = g\n"
     "Help = h\n"
     "\n"
-    "E.g. !lobby m 1 ABCDEF NA``` ")
+    "E.g.: !lobby m 1 ABCDEF NA``` ")
 
 client.run(DISCORD_TOKEN)
