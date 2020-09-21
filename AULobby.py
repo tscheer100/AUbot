@@ -47,7 +47,7 @@ async def get(ctx, num=123):
 
     await ctx.send(result)
 
-@client.command()
+@client.command(aliases=["m", "M"])
 @commands.has_role('Server Voter')
 async def make(ctx, num : int, code, *, server):
 
@@ -84,7 +84,7 @@ async def make(ctx, num : int, code, *, server):
 
 client.remove_command("help")
 
-@client.command()
+@client.command(aliases=["h", "H"])
 
 async def help(ctx):
     await ctx.send("To find out a code for a lobby, type `!lobby get <lobby number>` \n"
