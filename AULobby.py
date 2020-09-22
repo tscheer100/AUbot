@@ -14,6 +14,10 @@ lobby3 = ["000000", "NA"]
 lobby4 = ["000000", "NA"]
 lobby5 = ["000000", "NA"]
 lobby6 = ["000000", "NA"]
+lobby7 = ["000000", "NA"]
+lobby8 = ["000000", "NA"]
+lobby9 = ["000000", "NA"]
+lobby10 = ["000000", "NA"]
 
 client = commands.Bot(command_prefix = "!lobby ")
 
@@ -40,6 +44,14 @@ async def get(ctx, num=123):
         result = "Lobby 5 | code: " + lobby5[0] + " server: " + lobby5[1]
     elif num == 6:
         result = "Lobby 6 | code: " + lobby6[0] + " server: " + lobby6[1]
+    elif num == 7:
+        result = "Lobby 7 | code: " + lobby7[0] + " server: " + lobby7[1]
+    elif num == 8:
+        result = "Lobby 8 | code: " + lobby8[0] + " server: " + lobby8[1]
+    elif num == 9:
+        result = "Lobby 9 | code: " + lobby9[0] + " server: " + lobby9[1]
+    elif num == 10:
+        result = "Lobby 10 | code: " + lobby10[0] + " server: " + lobby10[1]
     elif num == 420:
         result = "Lobby 420 | code: " + lobby420[0] + " server: " + lobby420[1]
     else:
@@ -71,6 +83,18 @@ async def make(ctx, num : int, code, *, server):
     elif num == 6:
         lobby6[0] = code.upper()
         lobby6[1] = server.upper()
+    elif num == 7:
+        lobby7[0] = code.upper()
+        lobby7[1] = server.upper()
+    elif num == 8:
+        lobby8[0] = code.upper()
+        lobby8[1] = server.upper()
+    elif num == 9:
+        lobby9[0] = code.upper()
+        lobby9[1] = server.upper()
+    elif num == 10:
+        lobby10[0] = code.upper()
+        lobby10[1] = server.upper()
     elif num == 420:
         lobby420[0] = code.upper()
         lobby420[1] = server.upper()
