@@ -105,6 +105,11 @@ async def assign(ctx, num : int, code, *, server):
     else:
         await ctx.send("invalid syntax or lobby.")
 
+@client.command(aliases=["git"])
+async def github(ctx):
+    await ctx.send("check out the bot's code at:\n"
+    "https://github.com/tscheer100/AUbot")
+
 @assign.error
 async def assign_handler(ctx, error):
     if isinstance(error, commands.MissingRole):

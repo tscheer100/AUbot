@@ -1,3 +1,9 @@
+V1.2
+----
+- Shortened commands to start with "!" rather than "!lobby"
+- changed "make" to "assign" to prevent confict with MEE6 and Rythm
+- Added message to non Server Voters who try to use "assign"
+
 V1.1
 ----
 - Added aliases to make it easier to use commands
