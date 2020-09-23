@@ -62,52 +62,48 @@ async def get(ctx, num=123):
 @client.command(aliases=["a", "A"])
 @commands.has_role('Server Voter')
 async def assign(ctx, num : int, code, *, server):
-        failed = False
+    failed = False
 
-        if num == 1:
-            lobby1[0] = code.upper()
-            lobby1[1] = server.upper()
-        elif num == 2:
-            lobby2[0] = code.upper()
-            lobby2[1] = server.upper()
-        elif num == 3:
-            lobby3[0] = code.upper()
-            lobby3[1] = server.upper()
-        elif num == 4:
-            lobby4[0] = code.upper()
-            lobby4[1] = server.upper()
-        elif num == 5:
-            lobby5[0] = code.upper()
-            lobby5[1] = server.upper()
-        elif num == 6:
-            lobby6[0] = code.upper()
-            lobby6[1] = server.upper()
-        elif num == 7:
-            lobby7[0] = code.upper()
-            lobby7[1] = server.upper()
-        elif num == 8:
-            lobby8[0] = code.upper()
-            lobby8[1] = server.upper()
-        elif num == 9:
-            lobby9[0] = code.upper()
-            lobby9[1] = server.upper()
-        elif num == 10:
-            lobby10[0] = code.upper()
-            lobby10[1] = server.upper()
-        elif num == 420:
-            lobby420[0] = code.upper()
-            lobby420[1] = server.upper()
-        else:
-            failed = True
+    if num == 1:
+        lobby1[0] = code.upper()
+        lobby1[1] = server.upper()
+    elif num == 2:
+        lobby2[0] = code.upper()
+        lobby2[1] = server.upper()
+    elif num == 3:
+        lobby3[0] = code.upper()
+        lobby3[1] = server.upper()
+    elif num == 4:
+        lobby4[0] = code.upper()
+        lobby4[1] = server.upper()
+    elif num == 5:
+        lobby5[0] = code.upper()
+        lobby5[1] = server.upper()
+    elif num == 6:
+        lobby6[0] = code.upper()
+        lobby6[1] = server.upper()
+    elif num == 7:
+        lobby7[0] = code.upper()
+        lobby7[1] = server.upper()
+    elif num == 8:
+        lobby8[0] = code.upper()
+        lobby8[1] = server.upper()
+    elif num == 9:
+        lobby9[0] = code.upper()
+        lobby9[1] = server.upper()
+    elif num == 10:
+        lobby10[0] = code.upper()
+        lobby10[1] = server.upper()
+    elif num == 420:
+        lobby420[0] = code.upper()
+        lobby420[1] = server.upper()
+    else:
+        failed = True
 
-        if not failed:
-            await ctx.send("Lobby " + str(num) + " set. Code is " + code.upper() + " and is running on " + server.upper() + " servers")
-        else:
-            await ctx.send("invalid syntax or lobby.")
-    # else:
-    #     await ctx.send("You do not have a `Server Voter` role.\n"
-    #     "You can get one by voting here:\n"
-    #     "https://top.gg/servers/734164220911812618/vote")
+    if not failed:
+        await ctx.send("Lobby " + str(num) + " set. Code is " + code.upper() + " and is running on " + server.upper() + " servers")
+    else:
+        await ctx.send("invalid syntax or lobby.")
 
 @commands.error()
 async def assign_handler(ctx, error)
