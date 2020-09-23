@@ -109,7 +109,6 @@ async def assign(ctx, num : int, code, *, server):
 client.remove_command("help")
 
 @client.command(aliases=["h", "H"])
-
 async def help(ctx):
     await ctx.send("To find out a code for a lobby, type `!lobby get <lobby number>` \n"
     "If you want to set a code for a lobby, type `!lobby make <lobby #> <code> <NA|EU|Asia>`.\n\n"
@@ -117,11 +116,11 @@ async def help(ctx):
     "***NOTE:   only people with the `Server Voter` role can use the `!lobby make` command.*** \n"
     "to get the `Server Voter` tag, vote here:\n"
     "https://top.gg/servers/734164220911812618/vote\n"
-    "```New Aliases added\n"
-    "Make = m\n"
+    "***New Aliases added***\n"
+    "```Assign = a\n"
     "Get = g\n"
     "Help = h\n"
     "\n"
-    "E.g.: !lobby m 1 ABCDEF NA``` ")
+    "E.g.: !a 1 ABCDEF NA``` ")
 
 client.run(DISCORD_TOKEN)
