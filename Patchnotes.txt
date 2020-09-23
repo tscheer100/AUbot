@@ -1,0 +1,9 @@
+V1.1
+----
+- Added aliases to make it easier to use commands
+- Fixed up help command
+- Bug fixes
+
+V1.0
+----
+Initial release
