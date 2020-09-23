@@ -61,9 +61,7 @@ async def get(ctx, num=123):
 
 @client.command(aliases=["a", "A"])
 @commands.has_role('Server Voter')
-@command.error()
-async def assign(ctx, num : int, code, *, server, error):
-    if not isinstance(error, commands.MissingRole):
+async def assign(ctx, num : int, code, *, server):
         failed = False
 
         if num == 1:
@@ -106,7 +104,14 @@ async def assign(ctx, num : int, code, *, server, error):
             await ctx.send("Lobby " + str(num) + " set. Code is " + code.upper() + " and is running on " + server.upper() + " servers")
         else:
             await ctx.send("invalid syntax or lobby.")
-    else:
+    # else:
+    #     await ctx.send("You do not have a `Server Voter` role.\n"
+    #     "You can get one by voting here:\n"
+    #     "https://top.gg/servers/734164220911812618/vote")
+
+@commands.error()
+async def assign_handler(ctx, error)
+    if isinstance(error, commands.MissingRole):
         await ctx.send("You do not have a `Server Voter` role.\n"
         "You can get one by voting here:\n"
         "https://top.gg/servers/734164220911812618/vote")
