@@ -19,7 +19,7 @@ lobby8 = ["000000", "NA"]
 lobby9 = ["000000", "NA"]
 lobby10 = ["000000", "NA"]
 
-client = commands.Bot(command_prefix = "!lobby ")
+client = commands.Bot(command_prefix = "!")
 
 @client.event
 async def on_ready():
@@ -59,9 +59,9 @@ async def get(ctx, num=123):
 
     await ctx.send(result)
 
-@client.command(aliases=["m", "M"])
+@client.command(aliases=["a", "A"])
 @commands.has_role('Server Voter')
-async def make(ctx, num : int, code, *, server):
+async def assign(ctx, num : int, code, *, server):
 
     failed = False
 
