@@ -105,7 +105,7 @@ async def assign(ctx, num : int, code, *, server):
     else:
         await ctx.send("invalid syntax or lobby.")
 
-@assign.error()
+@assign.error
 async def assign_handler(ctx, error)
     if isinstance(error, commands.MissingRole):
         await ctx.send("You do not have a `Server Voter` role.\n"
