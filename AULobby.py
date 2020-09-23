@@ -23,7 +23,7 @@ client = commands.Bot(command_prefix = "!")
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.online, activity=discord.Game("!lobby help"))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game("!help"))
     print("AU Lobby is now running")
 
 
@@ -116,6 +116,7 @@ async def help(ctx):
     "***NOTE:   only people with the `Server Voter` role can use the `!lobby make` command.*** \n"
     "to get the `Server Voter` tag, vote here:\n"
     "https://top.gg/servers/734164220911812618/vote\n"
+    "\n"
     "***New Aliases added***\n"
     "```Assign = a\n"
     "Get = g\n"
