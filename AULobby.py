@@ -123,8 +123,9 @@ client.remove_command("help")
 async def help(ctx):
     await ctx.send("To find out a code for a lobby, type `!get <lobby number>` \n"
     "If you want to set a code for a lobby, type `!assign <lobby #> <code> <NA|EU|Asia>`.\n\n"
+    "You can also check out the code to this bot by typing `!github`"
     ""
-    "***NOTE:   only people with the `Server Voter` role can use the `!assigne` command.*** \n"
+    "***NOTE:   only people with the `Server Voter` role can use the `!assign` command.*** \n"
     "to get the `Server Voter` tag, vote here:\n"
     "https://top.gg/servers/734164220911812618/vote\n"
     "\n"
@@ -132,6 +133,7 @@ async def help(ctx):
     "```Assign = a\n"
     "Get = g\n"
     "Help = h\n"
+    "github = git"
     "\n"
     "E.g.: !a 1 ABCDEF NA``` ")
 
